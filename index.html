@@ -14,29 +14,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <main>
-        <!-- NAV — BP Serviços -->
+        <!-- NAV — BP Serviços (logo central no mobile) -->
         <header class="bp-header">
-            <div class="bp-container bp-header__wrap">
-                <a href="#home" class="bp-logo" aria-label="BP Serviços — Início">
-                    <img class="logo" src="./src/images/bplogo.webp">
-                </a>
+        <div class="bp-container bp-header__wrap">
+            
+            <!-- LOGO (só aparece no mobile; centralizada) -->
+            <a href="#home" class="bp-logo" aria-label="BP Serviços — Início">
+            <img class="logo" src="./src/images/bplogo.webp" alt="BP Serviços">
+            </a>
 
-                <!-- Botão Hamburger (mobile) -->
-                <button class="bp-nav__toggle" aria-expanded="false" aria-controls="bp-nav">
-                    <span class="bp-nav__bar" aria-hidden="true"></span>
-                    <span class="sr-only">Abrir menu</span>
-                </button>
+            <!-- Navegação -->
+            <nav id="bp-nav" class="bp-nav" aria-label="Navegação principal">
+            <ul class="bp-nav__list">
+                <li class="bp-nav__item"><a class="bp-nav__link is-active" href="#home" aria-current="page">Home</a></li>
+                <li class="bp-nav__item"><a class="bp-nav__link" href="#quem-somos">Quem Somos</a></li>
+                <li class="bp-nav__item"><a class="bp-nav__link" href="#servicos">Serviços</a></li>
+                <li class="bp-nav__item"><a class="bp-nav__link" href="#contatos">Contatos</a></li>
+            </ul>
+            </nav>
 
-                <!-- Navegação -->
-                <nav id="bp-nav" class="bp-nav" aria-label="Navegação principal">
-                    <ul class="bp-nav__list">
-                        <li class="bp-nav__item"><a class="bp-nav__link is-active" href="#home" aria-current="page">Home</a></li>
-                        <li class="bp-nav__item"><a class="bp-nav__link" href="#quem-somos">Quem Somos</a></li>
-                        <li class="bp-nav__item"><a class="bp-nav__link" href="#servicos">Serviços</a></li>
-                        <li class="bp-nav__item"><a class="bp-nav__link" href="#contatos">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- Botão Hamburger (mobile) -->
+            <button class="bp-nav__toggle" aria-expanded="false" aria-controls="bp-nav">
+            <span class="bp-nav__bar" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menu</span>
+            </button>
+
+        </div>
         </header>
 
         <body>
@@ -124,9 +127,6 @@
                             seus espaços seguros, organizados e prontos para receber.
                         </p>
 
-                        <div class="bp-about__cta">
-                            <a class="bp-btn bp-btn--outline" href="#servicos">Saiba mais sobre nós</a>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -163,7 +163,7 @@
                         <!-- 2 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Pintura de revestimento de piso">
+                            <img src="https://images.unsplash.com/photo-1580145646320-9a89ed69f7fb?q=80&w=1920&auto=format&fit=crop" alt="Pintura de revestimento de piso">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Pintura para Revestimento de Piso</h3>
@@ -176,7 +176,7 @@
                         <!-- 3 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop" alt="Equipe de conservação e limpeza de condomínio">
+                            <img src="https://images.unsplash.com/photo-1758836113725-a1b082c622bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29uZG9taW5pdW0lMjBNYWludGVuYW5jZSUyMGFuZCUyMENsZWFuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=80&w=1920" alt="Equipe de conservação e limpeza de condomínio">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Conservação e Limpeza de Condomínio</h3>
@@ -189,7 +189,7 @@
                         <!-- 4 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1582582494700-2224fd5b1f8d?q=80&w=800&auto=format&fit=crop" alt="Limpeza pós-obra, comercial e industrial">
+                            <img src="https://plus.unsplash.com/premium_photo-1683141112334-d7d404f6e716?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fFBvc3QtY29uc3RydWN0aW9uJTJDJTIwY29tbWVyY2lhbCUyMGFuZCUyMGluZHVzdHJpYWwlMjBjbGVhbmluZy58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=80&w=1920" alt="Limpeza pós-obra, comercial e industrial">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Limpeza Pós-Obra, Comercial e Industrial</h3>
@@ -228,7 +228,7 @@
                         <!-- 7 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop" alt="Manutenção e tratamento de fachadas">
+                            <img src="https://images.unsplash.com/photo-1635611578109-4b9ce9525b13?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fEZhY2FkZXMlMjBzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&q=80&w=1920" alt="Manutenção e tratamento de fachadas">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Fachadas</h3>
@@ -241,7 +241,7 @@
                         <!-- 8 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1591081658719-84e47b2f9add?q=80&w=800&auto=format&fit=crop" alt="Gesso e forro">
+                            <img src="https://plus.unsplash.com/premium_photo-1683121170531-cff45a1d668d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGxhc3RlciUyMGFuZCUyMENlaWxpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=80&w=1920" alt="Gesso e forro">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Gesso e Forro</h3>
@@ -267,7 +267,7 @@
                         <!-- 10 -->
                         <li class="bp-card">
                             <figure class="bp-card__media">
-                            <img src="https://images.unsplash.com/photo-1581090463507-41f86e57127b?q=80&w=800&auto=format&fit=crop" alt="Elétrica e hidráulica">
+                            <img src="https://plus.unsplash.com/premium_photo-1678766819262-cdc490bfd0d1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fEVsZWN0cmljYWwlMjBhbmQlMjBIeWRyYXVsaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=80&w=1920" alt="Elétrica e hidráulica">
                             </figure>
                             <div class="bp-card__body">
                             <h3 class="bp-card__title">Elétrica e Hidráulica</h3>
