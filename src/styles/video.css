@@ -1,0 +1,144 @@
+/* ===========================
+   Seção: Vídeo + Explicação
+   (sem :root, sem variáveis globais)
+=========================== */
+
+.bp-container{
+  width:min(100% - 24px, 1120px);
+  margin-inline:auto;
+}
+
+.bp-video{
+  background:#ffffff;
+  padding:clamp(28px, 6vw, 96px) 0;
+}
+
+/* Cabeçalho centralizado */
+.bp-video__head{
+  text-align:center;
+  margin-bottom:16px;
+}
+.bp-video__title{
+  font:800 clamp(1.3rem, 3.4vw, 2.4rem)/1.15 "Inter", system-ui, sans-serif;
+  color:#2B0F0A;
+  margin:0 0 .3rem;
+  letter-spacing:.2px;
+}
+.bp-video__subtitle{
+  color:#666;
+  max-width:56ch;
+  margin:0 auto 12px;
+  font-size:clamp(.98rem, 1.05vw, 1.1rem);
+}
+
+/* Vídeo próprio (tag <video>) com aspect-ratio */
+.bp-video__frame{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #e8ebf0;
+  box-shadow:0 16px 40px rgba(0,0,0,.12);
+  margin:0;
+}
+.bp-video__media{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  background:#0e0e0e;
+}
+
+/* Alternativa: embed YouTube responsivo */
+.bp-video__embed{
+  position:relative;
+  width:100%;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #e8ebf0;
+  box-shadow:0 16px 40px rgba(0,0,0,.12);
+}
+.bp-video__embed iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  display:block;
+  border:0;
+}
+
+/* Processo */
+.bp-video__process{
+  margin-top:18px;
+}
+.bp-process__title{
+  text-align:center;
+  font:800 clamp(1.05rem, 2.2vw, 1.4rem)/1.2 "Inter", system-ui, sans-serif;
+  color:#2B0F0A;
+  margin:0 0 10px;
+}
+.bp-process__grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+  margin:0; padding:0; list-style:none;
+}
+
+/* Card/etapa */
+.bp-step{
+  background:#fff;
+  border:1px solid #e8ebf0;
+  border-radius:14px;
+  padding:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.bp-step:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px rgba(0,0,0,.1);
+  border-color:#F9C400;
+}
+.bp-step__num{
+  display:inline-block;
+  font:800 .95rem/1 "Inter", system-ui, sans-serif;
+  color:#2B0F0A;
+  background:#F9C400;
+  border-radius:999px;
+  padding:.35rem .6rem;
+  margin-bottom:.5rem;
+}
+.bp-step__title{
+  margin:.1rem 0 .3rem;
+  font:700 1.05rem/1.2 "Inter", system-ui, sans-serif;
+  color:#2B0F0A;
+}
+.bp-step p{
+  margin:0;
+  color:#666;
+  font-size:.98rem;
+  line-height:1.55;
+}
+
+/* ===== Breakpoints ===== */
+
+/* 375px */
+@media (min-width:375px){
+  .bp-container{ width:min(100% - 28px,1120px); }
+}
+
+/* 768px — 2 colunas nas etapas */
+@media (min-width:768px){
+  .bp-process__grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:14px;
+  }
+}
+
+/* 1024px — 3 colunas nas etapas */
+@media (min-width:1024px){
+  .bp-container{ width:min(100% - 40px,1160px); }
+  .bp-process__grid{ grid-template-columns:repeat(3, 1fr); }
+}
+
+/* 1440px */
+@media (min-width:1440px){
+  .bp-container{ width:min(100% - 64px,1240px); }
+}

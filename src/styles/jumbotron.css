@@ -1,0 +1,97 @@
+/* ===========================
+   CTA — Fundo Degradê Azul Moderno
+=========================== */
+.bp-cta {
+  background: radial-gradient(circle at center, #002244 0%, #000000 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: clamp(48px, 8vw, 96px) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Elemento decorativo opcional no canto direito */
+.bp-cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 340px;
+  height: 340px;
+  background: url("logo-bp-servicos-amarela.png") no-repeat center/contain;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.bp-cta__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bp-cta__title {
+  font: 800 clamp(1.4rem, 3.6vw, 2.4rem) / 1.15 "Inter", system-ui, sans-serif;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.bp-cta__subtitle {
+  color: #eaeaea;
+  font-size: clamp(1rem, 1.05vw, 1.125rem);
+  margin-bottom: 1.8rem;
+}
+
+/* Botão dourado */
+.bp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.bp-btn--cta {
+  background: #f9c400;
+  color: #2b0f0a;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.bp-btn--cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+/* ===== Breakpoints ===== */
+@media (min-width: 375px) {
+  .bp-container {
+    width: min(100% - 28px, 1120px);
+  }
+}
+@media (min-width: 768px) {
+  .bp-cta__title {
+    font-size: 2.4rem;
+  }
+  .bp-cta__subtitle {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 1024px) {
+  .bp-container {
+    width: min(100% - 40px, 1160px);
+  }
+}
+@media (min-width: 1440px) {
+  .bp-container {
+    width: min(100% - 64px, 1240px);
+  }
+  .bp-cta::after {
+    width: 420px;
+    height: 420px;
+    opacity: 0.1;
+  }
+}

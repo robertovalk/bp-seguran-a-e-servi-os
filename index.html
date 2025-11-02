@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BP Serviços</title>
+        <link rel="icon" type="image/png" href="./src/images/logo.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./src/styles/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <main>
+        <!-- NAV — BP Serviços -->
+        <header class="bp-header">
+            <div class="bp-container bp-header__wrap">
+                <a href="#home" class="bp-logo" aria-label="BP Serviços — Início">
+                    <img class="logo" src="./src/images/bplogo.webp">
+                </a>
+
+                <!-- Botão Hamburger (mobile) -->
+                <button class="bp-nav__toggle" aria-expanded="false" aria-controls="bp-nav">
+                    <span class="bp-nav__bar" aria-hidden="true"></span>
+                    <span class="sr-only">Abrir menu</span>
+                </button>
+
+                <!-- Navegação -->
+                <nav id="bp-nav" class="bp-nav" aria-label="Navegação principal">
+                    <ul class="bp-nav__list">
+                        <li class="bp-nav__item"><a class="bp-nav__link is-active" href="#home" aria-current="page">Home</a></li>
+                        <li class="bp-nav__item"><a class="bp-nav__link" href="#quem-somos">Quem Somos</a></li>
+                        <li class="bp-nav__item"><a class="bp-nav__link" href="#servicos">Serviços</a></li>
+                        <li class="bp-nav__item"><a class="bp-nav__link" href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <body>
+        <!-- BANNER / HERO — BP Segurança e Serviços -->
+        <section class="bp-hero" id="home">
+            <div class="bp-hero__bg" aria-hidden="true">
+                <!-- troque a imagem abaixo por um still do seu vídeo ou foto oficial -->
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop" alt="" />
+                <div class="bp-hero__overlay"></div>
+            </div>
+
+            <div class="bp-container bp-hero__container">
+                <div class="bp-hero__content">
+                <h1 class="bp-hero__title">
+                    Segurança e Serviços<br>
+                    com <span>Excelência</span> e Confiança
+                </h1>
+                <p class="bp-hero__subtitle">
+                    Portaria, segurança, jardinagem, limpeza e manutenção — equipes treinadas e atendimento ágil para condomínios e empresas.
+                </p>
+
+                <a
+                    class="bp-hero__cta"
+                    target="_blank" rel="noopener noreferrer"
+                    href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os"
+                    aria-label="Abrir conversa no WhatsApp"
+                >
+                    Fale no WhatsApp
+                </a>
+
+                <ul class="bp-hero__bullets">
+                    <li>✔ Profissionais uniformizados</li>
+                    <li>✔ Contratos flexíveis</li>
+                    <li>✔ Atuação 24/7</li>
+                </ul>
+                </div>
+
+                <!-- Card/figura decorativa à direita (aparece de tablet pra cima) -->
+                <figure class="bp-hero__figure">
+                <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop"
+                    alt="Equipe em operação" loading="lazy" />
+                </figure>
+            </div>
+        </section>
+
+
+            <section id="quem-somos" class="bp-about">
+                <div class="bp-container bp-about__grid">
+                    <!-- Imagem (esquerda) -->
+                    <figure class="bp-about__media" aria-label="Centro de monitoramento e equipe BP">
+                    <!-- troque pela sua imagem oficial -->
+                    <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1600&auto=format&fit=crop" 
+                        alt="Sala de monitoramento com múltiplas telas e equipe em operação" loading="lazy">
+                    </figure>
+
+                    <!-- Texto (direita) -->
+                    <div class="bp-about__text">
+                        <p class="bp-eyebrow">Especializada na prestação de serviços</p>
+                        <h2 class="bp-about__title">Sobre a BP Segurança e Serviços</h2>
+                        <span class="bp-about__bar" aria-hidden="true"></span>
+
+                        <p>
+                            Nascida em <strong>Manaus</strong>, a BP Segurança e Serviços carrega o DNA da Amazônia: 
+                            solidez, resiliência e respeito às pessoas. Atendemos condomínios, indústrias e comércios 
+                            em toda a região Norte com soluções integradas em <em>portaria, segurança, jardinagem, limpeza, 
+                            manutenção e pinturas</em>.
+                        </p>
+
+                        <p>
+                            Operamos com <strong>equipes treinadas</strong>, supervisão ativa e indicadores de desempenho 
+                            que garantem previsibilidade — do controle de acesso ao cuidado diário com as áreas comuns. 
+                            Conhecemos as particularidades do clima e da logística amazônica, e por isso estruturamos 
+                            processos que mantêm a operação estável o ano inteiro.
+                        </p>
+
+                        <p>
+                            Nosso compromisso é simples: <strong>entrega confiável</strong>, comunicação ágil e 
+                            <strong>parcerias de longo prazo</strong>. É assim que ajudamos nossos clientes a manterem 
+                            seus espaços seguros, organizados e prontos para receber.
+                        </p>
+
+                        <div class="bp-about__cta">
+                            <a class="bp-btn bp-btn--outline" href="#servicos">Saiba mais sobre nós</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicos" class="bp-services">
+                <div class="bp-container">
+                    <header class="bp-services__head">
+                    <h2 class="bp-services__title">Nossos Serviços</h2>
+                    </header>
+
+                    <div class="bp-carousel" data-step="2" aria-roledescription="carrossel">
+                    <!-- Controles -->
+                    <button class="bp-carousel__control prev" aria-label="Anterior">‹</button>
+                    <button class="bp-carousel__control next" aria-label="Próximo">›</button>
+
+                    <!-- Área visível -->
+                    <div class="bp-carousel__viewport" tabindex="0">
+                        <!-- Trilha -->
+                        <ul class="bp-carousel__track">
+                        <!-- 1 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=800&auto=format&fit=crop" alt="Agente de portaria em controle de acesso">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Serviços de Agente de Portaria</h3>
+                            <p class="bp-card__text">Controle de acesso, recepção e monitoramento com registro e procedimentos padronizados.</p>
+                            <a class="bp-btn bp-btn--whatsapp"
+                                target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Servi%C3%A7os%20de%20Agente%20de%20Portaria.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Pintura de revestimento de piso">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Pintura para Revestimento de Piso</h3>
+                            <p class="bp-card__text">Preparação, demarcação e acabamentos de alta resistência para áreas internas e externas.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Pintura%20para%20Revestimento%20de%20Piso.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 3 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop" alt="Equipe de conservação e limpeza de condomínio">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Conservação e Limpeza de Condomínio</h3>
+                            <p class="bp-card__text">Rotinas diárias, coleta seletiva e limpeza técnica para áreas comuns e administrativas.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Conserva%C3%A7%C3%A3o%20e%20Limpeza%20de%20Condom%C3%ADnio.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 4 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1582582494700-2224fd5b1f8d?q=80&w=800&auto=format&fit=crop" alt="Limpeza pós-obra, comercial e industrial">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Limpeza Pós-Obra, Comercial e Industrial</h3>
+                            <p class="bp-card__text">Remoção de resíduos, higienização profunda e liberação segura de áreas.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Limpeza%20P%C3%B3s-Obra%2C%20Comercial%20e%20Industrial.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 5 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Jardinagem e paisagismo">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Jardinagem</h3>
+                            <p class="bp-card__text">Manutenção paisagística, podas, adubação e revitalização de áreas verdes.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Jardinagem.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 6 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="Construção civil">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Construção Civil</h3>
+                            <p class="bp-card__text">Obras e reformas com planejamento, segurança e controle de qualidade.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Constru%C3%A7%C3%A3o%20Civil.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 7 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop" alt="Manutenção e tratamento de fachadas">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Fachadas</h3>
+                            <p class="bp-card__text">Limpeza, tratamento e revitalização com técnicas seguras de acesso e ancoragem.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Fachadas.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 8 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1591081658719-84e47b2f9add?q=80&w=800&auto=format&fit=crop" alt="Gesso e forro">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Gesso e Forro</h3>
+                            <p class="bp-card__text">Acabamentos, sancas, divisórias e soluções técnicas para ambientes.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Gesso%20e%20Forro.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 9 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Reformas">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Reformas</h3>
+                            <p class="bp-card__text">Adequações, layout, pintura e modernizações com prazos e orçamentos claros.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20Reformas.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+
+                        <!-- 10 -->
+                        <li class="bp-card">
+                            <figure class="bp-card__media">
+                            <img src="https://images.unsplash.com/photo-1581090463507-41f86e57127b?q=80&w=800&auto=format&fit=crop" alt="Elétrica e hidráulica">
+                            </figure>
+                            <div class="bp-card__body">
+                            <h3 class="bp-card__title">Elétrica e Hidráulica</h3>
+                            <p class="bp-card__text">Manutenções preventivas e corretivas com profissionais qualificados.</p>
+                            <a class="bp-btn bp-btn--whatsapp" target="_blank" rel="noopener"
+                                href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20El%C3%A9trica%20e%20Hidr%C3%A1ulica.">Falar no WhatsApp</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="bp-video" id="video-portaria">
+            <div class="bp-container">
+                <!-- Título centralizado -->
+                <header class="bp-video__head">
+                <h2 class="bp-video__title">Segurança de Portaria — Como Funciona</h2>
+                <p class="bp-video__subtitle">
+                    Entenda em poucos minutos como implantamos e operamos a portaria da sua empresa ou condomínio.
+                </p>
+                </header>
+
+                <!-- Vídeo responsivo -->
+                <!-- Opção 1: vídeo próprio (substitua o src pelo seu .mp4) -->
+                <figure class="bp-video__frame">
+                <video
+                    class="bp-video__media"
+                    src="video-portaria.mp4"
+                    controls
+                    preload="metadata"
+                    poster="thumb-video-portaria.jpg"
+                >
+                    Seu navegador não suporta o vídeo HTML5.
+                </video>
+                </figure>
+
+                <!-- Opção 2 (alternativa): YouTube incorporado
+                <div class="bp-video__embed">
+                <iframe
+                    src="https://www.youtube.com/embed/XXXXXXXX?rel=0"
+                    title="Segurança de Portaria — BP Serviços"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+                </div>
+                -->
+
+                <!-- Explicação do processo -->
+                <div class="bp-video__process">
+                <h3 class="bp-process__title">Nosso Processo em 6 Etapas</h3>
+                <ul class="bp-process__grid">
+                    <li class="bp-step">
+                    <span class="bp-step__num">01</span>
+                    <h4 class="bp-step__title">Análise Técnica do Local</h4>
+                    <p>Visita técnica, leitura de riscos, definição de postos e rotas de acesso.</p>
+                    </li>
+
+                    <li class="bp-step">
+                    <span class="bp-step__num">02</span>
+                    <h4 class="bp-step__title">Plano de Portaria & SLA</h4>
+                    <p>Procedimentos padronizados, turnos, checklists e tempos de resposta.</p>
+                    </li>
+
+                    <li class="bp-step">
+                    <span class="bp-step__num">03</span>
+                    <h4 class="bp-step__title">Seleção & Treinamento</h4>
+                    <p>Equipe qualificada, reciclagens periódicas e simulações de ocorrência.</p>
+                    </li>
+
+                    <li class="bp-step">
+                    <span class="bp-step__num">04</span>
+                    <h4 class="bp-step__title">Implantação Assistida</h4>
+                    <p>Start do contrato com supervisão, entrega de materiais e comunicação.</p>
+                    </li>
+
+                    <li class="bp-step">
+                    <span class="bp-step__num">05</span>
+                    <h4 class="bp-step__title">Operação 24/7</h4>
+                    <p>Controle de acesso, rondas e integração com CFTV/alarme quando aplicável.</p>
+                    </li>
+
+                    <li class="bp-step">
+                    <span class="bp-step__num">06</span>
+                    <h4 class="bp-step__title">Relatórios & Melhoria Contínua</h4>
+                    <p>Indicadores de performance, auditorias e plano de ação evolutivo.</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </section>
+
+            <section class="bp-cta" id="contato">
+                <div class="bp-container">
+                    <div class="bp-cta__content">
+                    <h2 class="bp-cta__title">Entre em contato agora mesmo!</h2>
+                    <p class="bp-cta__subtitle">
+                        Clique no botão e entre em contato para tirar dúvidas ou solicitar um orçamento.
+                    </p>
+
+                    <a 
+                        href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bp-btn bp-btn--cta"
+                    >
+                        FALE COM UM ESPECIALISTA
+                    </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bp-contato" id="contatos">
+                <div class="bp-container bp-contato__grid">
+                    <!-- Mapa -->
+                    <div class="bp-contato__mapa">
+                    <iframe
+                        src="https://www.google.com/maps?q=Darcy+Michilles,+177B,+Manaus,+Brazil&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    </div>
+
+                    <!-- Contatos -->
+                    <div class="bp-contato__info">
+                    <h2 class="bp-contato__title">Fale Conosco</h2>
+                    <p class="bp-contato__text">
+                        Estamos prontos para atender você com agilidade e profissionalismo.
+                    </p>
+
+                    <ul class="bp-contato__lista">
+                        <li>
+                        <a
+                            href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bp-link bp-link--whatsapp"
+                        >
+                            📞 WhatsApp: (92) 99324-8484
+                        </a>
+                        </li>
+                        <li>
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bp-link bp-link--instagram"
+                        >
+                            📸 Instagram: @bpservicos
+                        </a>
+                        </li>
+                        <li>
+                        <p class="bp-endereco">
+                            📍 Rua Darcy Michilles, 177B<br>
+                            Manaus — AM, Brasil
+                        </p>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bp-footer">
+                <div class="bp-container bp-footer__grid">
+
+                    <!-- Logo + texto curto -->
+                    <div class="bp-footer__brand">
+                    <img
+                        src="./src/images/bplogo.webp"
+                        alt="BP Segurança e Serviços"
+                        class="bp-footer__logo"
+                        loading="lazy"
+                    />
+                    <p class="bp-footer__about">
+                        Soluções em portaria, segurança, jardinagem, limpeza e manutenção
+                        com equipes treinadas em Manaus e região.
+                    </p>
+                    </div>
+
+                    <!-- Navegação (mesmos links do nav) -->
+                    <nav class="bp-footer__nav" aria-label="Links do site">
+                    <h3 class="bp-footer__title">Navegação</h3>
+                    <ul class="bp-footer__list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contatos</a></li>
+                    </ul>
+                    </nav>
+
+                    <!-- Contatos -->
+                    <div class="bp-footer__contacts">
+                    <h3 class="bp-footer__title">Contatos</h3>
+                    <ul class="bp-footer__list">
+                        <li>
+                        <a class="bp-footer__link--whatsapp" target="_blank" rel="noopener"
+                            href="https://wa.me/55993248484?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20saber%20mais%20sobre%20os%20servi%C3%A7os.">
+                            WhatsApp: (92) 99324-8484
+                        </a>
+                        </li>
+                        <li>
+                        <a class="bp-footer__link--instagram" target="_blank" rel="noopener"
+                            href="https://www.instagram.com/">
+                            Instagram: @bpservicos
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <!-- Endereço -->
+                    <address class="bp-footer__address" aria-label="Endereço">
+                    <h3 class="bp-footer__title">Endereço</h3>
+                    <p>
+                        Rua Darcy Michilles, 177B<br>
+                        Manaus — AM, Brasil
+                    </p>
+                    </address>
+
+                </div>
+
+                <!-- Barra inferior -->
+                <div class="bp-footer__bar">
+                    <div class="bp-container bp-footer__bar__inner">
+                    <span>© <span id="year">2025</span> BP Segurança e Serviços. Todos os direitos reservados.</span>
+                    <a href="#home" class="bp-footer__top" aria-label="Voltar ao topo">↑ Topo</a>
+                    </div>
+                </div>
+        </footer>
+
+
+        </body>
+
+        <script src="./index.js"></script>
+    </main>
+</html> 

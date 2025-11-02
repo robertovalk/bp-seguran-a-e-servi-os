@@ -1,0 +1,103 @@
+/* ===========================
+   RODAPÉ — BP Serviços
+=========================== */
+.bp-container{ width:min(100% - 24px,1120px); margin-inline:auto; }
+
+.bp-footer{
+  background:#2B0F0A;             /* contraste com nav claro */
+  color:#f3f3f3;
+  padding:clamp(28px,5vw,56px) 0 0;
+  position:relative;
+  overflow:hidden;
+}
+
+/* textura sutil para dar vida */
+.bp-footer::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    linear-gradient(0deg, rgba(0,0,0,.25), rgba(0,0,0,.2)),
+    url("https://www.transparenttextures.com/patterns/hexellence.png");
+  opacity:.35; pointer-events:none;
+}
+
+.bp-footer__grid{
+  position:relative; z-index:1;
+  display:grid; gap:22px;
+}
+
+/* colunas */
+.bp-footer__brand,
+.bp-footer__nav,
+.bp-footer__contacts,
+.bp-footer__address{ min-width:0; }
+
+.bp-footer__logo{
+  width:120px; height:auto; display:block; margin:0 0 .6rem;
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,.45));
+}
+.bp-footer__about{
+  margin:0; color:#dcdcdc; line-height:1.6; font-size:.98rem;
+}
+
+/* títulos */
+.bp-footer__title{
+  color:#F9C400; font:800 1rem/1 "Inter",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.08em; margin:0 0 .6rem;
+}
+
+/* listas/links */
+.bp-footer__list{ list-style:none; margin:0; padding:0; display:grid; gap:.45rem; }
+.bp-footer__list a{
+  color:#ffffff; text-decoration:none; font-weight:600; position:relative;
+  transition:color .2s ease;
+}
+.bp-footer__list a::after{
+  content:""; position:absolute; left:0; bottom:-2px; height:5px; width:0;
+  background:#F9C400; border-radius:4px; transition:width .2s ease;
+}
+.bp-footer__list a:hover{ color:#fff; }
+.bp-footer__list a:hover::after{ width:36px; }
+
+/* variantes de contato */
+.bp-footer__link--whatsapp{ color:#F9C400; }
+.bp-footer__link--whatsapp:hover{ color:#ffd54a; }
+.bp-footer__link--instagram{ color:#ffb78c; }
+.bp-footer__link--instagram:hover{ color:#ffd0b3; }
+
+/* endereço */
+.bp-footer__address p{ margin:.2rem 0 0; color:#e8e8e8; line-height:1.5; }
+
+/* barra inferior */
+.bp-footer__bar{
+  margin-top:clamp(22px,4vw,38px);
+  background:#1b0704;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#d9d9d9;
+}
+.bp-footer__bar__inner{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 0;
+}
+.bp-footer__top{
+  color:#fff; text-decoration:none; font-weight:700;
+  background:rgba(249,196,0,.15); padding:.45rem .75rem; border-radius:999px;
+  transition:filter .2s ease, transform .2s ease;
+}
+.bp-footer__top:hover{ filter:brightness(1.1); transform:translateY(-2px); }
+
+/* ===== Breakpoints ===== */
+@media (min-width:768px){
+  .bp-footer__grid{
+    grid-template-columns: 1.15fr .8fr .9fr .9fr; /* logo / nav / contatos / endereço */
+    gap:28px;
+  }
+  .bp-footer__logo{ width:140px; }
+}
+@media (min-width:1024px){
+  .bp-container{ width:min(100% - 40px,1160px); }
+  .bp-footer__grid{ gap:36px; }
+}
+@media (min-width:1440px){
+  .bp-container{ width:min(100% - 64px,1240px); }
+}

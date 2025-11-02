@@ -1,0 +1,81 @@
+/* ===== Serviços – layout base ===== */
+.bp-services { background:#fff; padding:clamp(28px,6vw,84px) 0; }
+.bp-services__head { margin-bottom:14px; }
+.bp-services__title{
+  font:800 clamp(1.4rem,3vw,2.2rem)/1.15 "Inter",system-ui,sans-serif;
+  color:#2B0F0A; margin:0 0 .25rem;
+}
+
+/* ===== Carousel ===== */
+.bp-carousel{ position:relative; }
+.bp-carousel__control{
+  position:absolute; top:50%; transform:translateY(-50%);
+  z-index:3; inline-size:40px; block-size:40px;
+  border-radius:50%; border:1px solid #e8ebf0; background:#fff; color:#2B0F0A;
+  display:grid; place-items:center; font-size:22px; cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.bp-carousel__control:hover{ background:#F9C400; color:#2B0F0A; border-color:#F9C400; }
+.bp-carousel__control.prev{ left:-6px; }
+.bp-carousel__control.next{ right:-6px; }
+
+.bp-carousel__viewport{
+  overflow:hidden; border-radius:18px; outline:none;
+}
+.bp-carousel__track{
+  display:flex; gap:14px; padding:6px; margin:0; list-style:none;
+  will-change:transform;
+  transition:transform .35s ease;
+}
+
+/* ===== Card ===== */
+
+/* ===== Card por faixa ===== */
+/* Mobile: 1 por vez */
+.bp-card{
+  min-width:100%;
+  background:#ffffff; border:1px solid #e8ebf0; border-radius:18px;
+  overflow:hidden; display:flex; flex-direction:column;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.bp-card__media{aspect-ratio:16/10; overflow:hidden;}
+.bp-card__media img{width:100%; height:100%; object-fit:cover; transition:transform .35s ease;}
+.bp-card__body{padding:14px 14px 16px; display:grid; gap:8px;}
+.bp-card__title{font:700 1.05rem/1.2 "Inter",system-ui,sans-serif; color:#2B0F0A; margin:0;}
+.bp-card__text{color:#666; font-size:.98rem; line-height:1.5; margin:0 0 .25rem;}
+
+.bp-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:.7rem 1rem; border-radius:999px; font-weight:700; text-decoration:none;
+  transition:all .2s ease; border:2px solid transparent;
+}
+.bp-btn--whatsapp{ background:#F9C400; color:#2B0F0A; }
+.bp-btn--whatsapp:hover{ transform:translateY(-2px); filter:brightness(1.05); }
+
+/* Hover do vídeo: elevação, borda amarela e zoom da imagem */
+.bp-card:hover{ transform:translateY(-4px); border-color:#F9C400; box-shadow:0 16px 36px rgba(0,0,0,.12); }
+.bp-card:hover .bp-card__media img{ transform:scale(1.06); }
+
+/* ===== Responsividade do carrossel ===== */
+
+/* 768px: 2 por vez */
+@media (min-width:768px){
+  .bp-card{ min-width:calc((100% - 14px) / 2); }
+  .bp-carousel__control.prev{ left:-10px } 
+  .bp-carousel__control.next{ right:-10px }
+}
+
+/* 1024px+: 4 por vez */
+@media (min-width:1024px){
+  .bp-card{ min-width:calc((100% - 3*14px) / 4); }
+  .bp-carousel__control.prev{ left:-14px } 
+  .bp-carousel__control.next{ right:-14px }
+}
+
+/* 1440px: afrouxa gaps (mantém 4) */
+@media (min-width:1440px){
+  .bp-carousel__track{ gap:18px; }
+  .bp-card{ min-width:calc((100% - 3*18px) / 4); }
+}

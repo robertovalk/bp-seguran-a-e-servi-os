@@ -1,0 +1,107 @@
+/* ===========================
+   CONTATO — Fundo Claro Texturizado
+=========================== */
+.bp-contato {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.95)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  color: #2b0f0a;
+  padding: clamp(48px, 8vw, 96px) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bp-contato__grid {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Mapa */
+.bp-contato__mapa {
+  width: 100%;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid #f9c40015;
+}
+
+/* Info */
+.bp-contato__info {
+  text-align: left;
+  padding: 0 8px;
+}
+.bp-contato__title {
+  font: 800 clamp(1.3rem, 3.2vw, 2.2rem)/1.15 "Inter", system-ui, sans-serif;
+  color: #2b0f0a;
+  margin-bottom: 0.6rem;
+}
+.bp-contato__text {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Lista de contatos */
+.bp-contato__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.bp-link {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.bp-link:hover {
+  transform: translateX(4px);
+}
+.bp-link--whatsapp {
+  color: #f9c400;
+}
+.bp-link--whatsapp:hover {
+  color: #dcae00;
+}
+.bp-link--instagram {
+  color: #ff4e00;
+}
+.bp-link--instagram:hover {
+  color: #ff8a3d;
+}
+
+.bp-endereco {
+  color: #444;
+  margin: 0.5rem 0 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (min-width: 768px) {
+  .bp-contato__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .bp-contato__mapa {
+    height: 380px;
+  }
+}
+@media (min-width: 1024px) {
+  .bp-contato__mapa {
+    height: 420px;
+  }
+}
+@media (min-width: 1440px) {
+  .bp-container {
+    width: min(100% - 64px, 1240px);
+  }
+}
