@@ -21,31 +21,37 @@
 }
 
 /* Imagem com cantos arredondados e detalhe amarelo */
-.bp-about__media {
+.bp-about__media{
   position: relative;
   border-radius: 28px;
   overflow: hidden;
   isolation: isolate;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
-  border: 1px solid #e8ebf0;
 }
 
-.bp-about__media img {
+
+.bp-about__media img{
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
-.bp-about__media::before {
+/* pastilha amarela no topo-direito (acima da imagem) */
+.bp-about__media::after{
   content: "";
   position: absolute;
-  inset: -24px -24px auto auto;
-  width: 38%;
-  aspect-ratio: 2/1;
-  border-radius: 36px;
-  background: #ffe786;
-  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 90px;
+  background: rgba(249, 196, 0, 0.65); /* transparência */
+  border-bottom-left-radius: 36px;
+  z-index: 2;
+  pointer-events: none;
 }
+
 
 /* Texto */
 .bp-eyebrow {
@@ -126,6 +132,14 @@
   }
 }
 
+/* tamanhos maiores da pastilha nos breakpoints */
+@media (min-width: 768px){
+  .bp-about__media::after{
+    width: 160px;
+    height: 100px;
+  }
+}
+
 /* 1024px */
 @media (min-width: 1024px) {
   .bp-container {
@@ -136,6 +150,12 @@
   }
 }
 
+@media (min-width: 1024px){
+  .bp-about__media::after{
+    width: 180px;
+    height: 110px;
+  }
+}
 /* 1440px */
 @media (min-width: 1440px) {
   .bp-container {

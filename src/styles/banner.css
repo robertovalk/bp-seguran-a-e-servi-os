@@ -103,6 +103,40 @@
   width:100%; height:100%; object-fit:cover;
 }
 
+/* ===== HERO DECOR — LOGO TRANSLÚCIDA ===== */
+.hero{
+  position: relative;
+  overflow: hidden;
+}
+
+.bp-hero .bp-hero__content{ 
+  position: relative; 
+  z-index: 2; 
+}
+
+.bp-hero.bp-hero--logo::after{
+  content:"";
+  position:absolute; inset:0 auto 0 55%; /* ocupa a faixa da direita */
+  width:45%;
+  background: url("https://i.imgur.com/5c4v2cJ.png") no-repeat center right / contain; /* logo pública p/ teste */
+  opacity: .35;                   /* alta p/ ficar evidente */
+  mix-blend-mode: normal;         /* desligado no teste */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bp-hero .bp-hero__content{ position:relative; z-index:2; }
+
+/* opcional — ajustar em telas menores */
+@media (max-width: 768px){
+  .hero::after{
+    width: 65%;
+    opacity: 0.05;
+    background-position: center;
+  }
+}
+
+
 /* ===== Breakpoints ===== */
 
 /* 375px */
